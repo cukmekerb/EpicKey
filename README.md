@@ -1,4 +1,5 @@
 
+
 # EpicKey
 Super useful hotkeys for Windows
 
@@ -21,7 +22,9 @@ Super useful hotkeys for Windows
 	- Use arrow keys to move cursor
 	- Right shift is left-click
 	- Right control is right-click
-	- Right alt is middle click
+	- Right alt is middle click 
+
+
 ### Photoshop features
 	- Use midde mouse button to move view
 		- Emulates holding space+dragging
