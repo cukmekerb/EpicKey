@@ -7,6 +7,7 @@ Super useful hotkeys for Windows
 
  - Control the mouse using arrow keys
  - Middle click to move view in Photoshop
+ - Use + and - keys to zoom in and out in Photoshop
  - More coming soon
 
 ## Installing
@@ -28,4 +29,5 @@ Super useful hotkeys for Windows
 ### Photoshop features
 	- Use midde mouse button to move view
 		- Emulates holding space+dragging
+	- Use + and - keys to zoom in and out, respectively
 
