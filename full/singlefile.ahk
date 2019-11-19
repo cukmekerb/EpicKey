@@ -78,15 +78,9 @@ MouseGetPos, mxpos, mypos
 SendEvent {Click mxpos, mypos, up}
 Send {Blind}{Space up}
 return
-#IfWinNotActive ahk_class Photoshop
-*RAlt::
-if(poop == 1){
-MouseGetPos, mxpos, mypos
-Click, down, middle
-KeyWait, RAlt, U
-Click, up, middle
-}
-else{
-Send {Alt}
-}
+=::
+Send, ^{NumpadAdd}
+return
+-::
+Send, ^{NumpadSub}
 return
