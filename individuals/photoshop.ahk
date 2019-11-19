@@ -19,3 +19,9 @@ MouseGetPos, mxpos, mypos
 SendEvent {Click mxpos, mypos, up}
 Send {Blind}{Space up}
 return
+=::
+Send, ^{NumpadAdd}
+return
+-::
+Send, ^{NumpadSub}
+return
