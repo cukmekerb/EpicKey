@@ -30,4 +30,6 @@ Super useful hotkeys for Windows
 	- Use midde mouse button to move view
 		- Emulates holding space+dragging
 	- Use + and - keys to zoom in and out, respectively
-
+	
+### Misc. features
+	- Control+click to right click on a one-button mouse
