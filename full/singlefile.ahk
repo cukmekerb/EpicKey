@@ -19,6 +19,7 @@ Send {Right}
 }
 return
 ^LButton::RButton
+!LButton::MButton
 *Left::
 if(poop == 1){
 MouseGetPos, mxpos, mypos
@@ -61,15 +62,6 @@ return
 Click, right
 return
 #IfWinActive ahk_class Photoshop
-MButton::
-Send {Blind}{Space down}
-MouseGetPos, mxpos, mypos
-SendEvent {Click mxpos, mypos, down}
-KeyWait, MButton, U
-MouseGetPos, mxpos, mypos
-SendEvent {Click mxpos, mypos, up}
-Send {Blind}{Space up}
-return
 RAlt::
 Send {Blind}{Space down}
 MouseGetPos, mxpos, mypos
@@ -79,9 +71,30 @@ MouseGetPos, mxpos, mypos
 SendEvent {Click mxpos, mypos, up}
 Send {Blind}{Space up}
 return
+MButton::
+Send {Blind}{Space down}
+MouseGetPos, mxpos, mypos
+SendEvent {Click mxpos, mypos, down}
+KeyWait, MButton, U
+MouseGetPos, mxpos, mypos
+SendEvent {Click mxpos, mypos, up}
+Send {Blind}{Space up}
+return
 =::
 Send, ^{NumpadAdd}
 return
 -::
 Send, ^{NumpadSub}
+return
+#IfWinNotActive ahk_class Photoshop
+*RAlt::
+if(poop == 1){
+MouseGetPos, mxpos, mypos
+Click, down, middle
+KeyWait, RAlt, U
+Click, up, middle
+}
+else{
+Send {Alt}
+}
 return
