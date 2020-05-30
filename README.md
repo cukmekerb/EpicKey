@@ -33,4 +33,3 @@ Super useful hotkeys for Windows
 	
 ### Misc. features
 	- Control+click to right click on a one-button mouse
-	- Alt+click to middle click on a one button mouse
