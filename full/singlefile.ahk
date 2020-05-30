@@ -18,8 +18,11 @@ else{
 Send {Right}
 }
 return
-^LButton::RButton
-!LButton::MButton
+^LButton::
+Send, {RButton down}
+KeyWait, LButton, U
+Send, {RButton up}
+return
 *Left::
 if(poop == 1){
 MouseGetPos, mxpos, mypos
