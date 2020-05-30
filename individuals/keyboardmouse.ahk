@@ -19,7 +19,6 @@ Send {Right}
 }
 return
 ^LButton::RButton
-!LButton::MButton
 *Left::
 if(poop == 1){
 MouseGetPos, mxpos, mypos
